@@ -2,34 +2,643 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabrielle Loncke - Cornell CS Student | Game Design + Developer Student </title>
+    <title>Gabrielle Loncke - Cornell CS Student | Game Design and Development </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Gabrielle Loncke, Cornell University Mathematics and CS student specializing in Game Design and Development.">
+    <meta name="keywords" content="Gabrielle Loncke, Cornell University, Computer Science, Game Design, Game Development, Computer Graphics">
+    <meta name="author" content="Gabrielle Loncke">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href=" https://gabby23x.github.io/">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gabby23x.github.io/">
+    <meta property="og:title" content="Gabrielle Loncke - Cornell CS Student | Game Design and Development">
+    <meta property="og:description" content="Cornell University Mathematics and CS student specializing in Game Design and Development.">
+    <meta property="og:image" content="https://gabby23x.github.io/image/profile.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://gabby23x.github.io/">
+    <meta property="twitter:title" content="Gabrielle Loncke - Cornell CS Student | Game Design and Development">
+    <meta property="twitter:description" content="Cornell University Mathematics and CS student specializing in Game Design and Development.">
+    <meta property="twitter:image" content="https://gabby23x.github.io/image/profile.jpg">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Gabrielle Loncke",
+      "url": "https://gabby23x.github.io/",
+      "image": "https://gabby23x.github.io/image/profile.png",
+      "sameAs": [
+        "https://github.com/gabby23x"
+      ],
+      "jobTitle": "Undergraduate Student",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Cornell University"
+      },
+      "alumniOf": {
+        "@type": "Organization",
+        "name": "Cornell University"
+      },
+      "knowsAbout": [
+        "Game Development",
+        "Game Design", 
+        "AR/VR",
+        "Unity",
+        "Project Management",
+        "Edge Computing"
+      ],
+      "nationality": "Guyanese"
+    }
+    </script>
+    
+    <!-- Google Fonts: Noto Sans & Noto Serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="icon" type="image/png" href="image/linkme.png">
+    <style>
+        /* All styles from here have been moved to styles.css */
+    </style>
 </head>
 
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Theme switch button -->
+    <div class="theme-switch" onclick="toggleTheme()">
+        <i class="fas fa-moon"></i>
+    </div>
 
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Welcome to my GitHub Pages website!</p>
-        </section>
-    </main>
+    <!-- Navbar -->
+    <!--
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark custom-navbar">
+        <div class="container d-flex justify-content-start align-items-center">
+            <div class="d-flex align-items-center">
+                
+                    <ul class="navbar-nav d-flex flex-row gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#bio"><i class="fas fa-user fa-fw"></i> About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#publication"><i class="fas fa-book-open fa-fw"></i>
+                                Publications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects"><i class="fas fa-briefcase fa-fw"></i> Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience"><i class="fas fa-briefcase fa-fw"></i>
+                                Experiences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#personal"><i class="fas fa-bowl-food fa-fw"></i> Personal</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    -->
 
-    <footer>
-        <p>&copy; 2025 Gabby Loncke</p>
-    </footer>
+    <div class="main-layout">
+        <!-- Fixed Left Sidebar for Desktop -->
+        <div class="left-sidebar">
+            <img src="image/profile.jpg" alt="profile picture" class="sidebar-image">
+            <h2 class="sidebar-name">Gabrielle Loncke</h2>
+            <div class="sidebar-info" style="white-space: nowrap;">[GAB-ree-el&nbsp;LONK]</div>
+            <div class="sidebar-links">
+                <a href="mailto: gal98@cornell.edu"><i class="fas fa-envelope"></i> Email</a>
+                 <a href="https://www.linkedin.com/in/gabrielle-loncke-145228200/" class="black"><i class="fab fa-linkedin"></i> LinkedIn</a> |
+                <a href="https://github.com/gabby23x"><i class="fab fa-github"></i> GitHub</a>
+                <a href="pdf/resume.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Resume</a>
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <!-- Mobile Header (only shown on mobile) -->
+            <div class="mobile-header">
+                <div class="container pt-5 mt-5">
+                    <div class="row align-items-center">
+                        <div class="col-md-3">
+                            <img src="image/profile.jpg" alt="profile picture"
+                                style="width: 100%; max-width: 220px; border-radius: 5px; " class="profile-image mobile-spacing">
+                        </div>
+                        <div class="col-md-9">
+                            <h2 class="main-name">Gabrielle Loncke</h2>
+                            <div style="font-style: italic; margin-bottom: 0.5rem; white-space: nowrap;">[GAB-ree-el&nbsp;LONK]</div>
+                            <div><a href="mailto: gal98@cornell.edu" class="black"><i class="fas fa-envelope"></i> Email</a> |
+                                <a href="https://www.linkedin.com/in/gabrielle-loncke-145228200/" class="black"><i class="fab fa-linkedin"></i> LinkedIn</a> |
+                                <a href="https://github.com/gabby23x" class="black"><i class="fab fa-github"></i> GitHub</a> |
+                                <a href="pdf/resume.pdf" target="_blank" class="black"><i class="fas fa-file-pdf"></i> Resume</a>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+
+            <!-- Content Container -->
+            <div class="container">
+                <!-- About me -->
+                <div class="row pt-4" id="bio">
+                    <div class="col-md-12">
+                        <div>
+                            <p>
+                                I'm currently pursing my B.A. in CS and Game Design, through the <a
+                                    href="https://gdiac.cs.cornell.edu/gdiac/" class="black">GDIAC
+                                    Program at Cornell University.
+                                </p>
+                        
+
+                            <p>
+                                <!-- <span class="research-interests-header">Research Interests.</span> -->
+                                I'm interested in the intersections of the arts and technology, and I have a love of leveraging various technologies to create innovative
+                                and engaging creative media that resonates with diverse audiences.
+                                Currently I'm working on developing an AR/MR game that prototypes varying levels of latency and its effect on gameplay.
+                                The prototype will demonstrate the benefits of edge computing on a low latency 5G edge infrastructure platform.
+                            </p>
+
+                            <p> I've recently finished  <a href="https://zzigak.github.io/book/index.html" class="black">readings on physical simulation.</a>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Publications -->
+                <div class="sec-wrapper pub-wrapper" id="publication">
+                    <div class="row pt-2" id="publication">
+                        <div class="col-md-12">
+                            <h3>Publications</h3>
+                            <p>* indicates equal contributions. See my <a href="#" class="black">Google Scholar</a> page for an
+                                up-to-date list.</p>
+                        </div>
+                    </div>
+
+                    <!-- Refactoring Codebases -->
+                    <div class="section-item">
+                        <div class="row align-items-center">
+                            <div class="col-xs-12 col-md-auto col-wrapper">
+                                <div class="figure">
+                                    <img src="image/refactor.png" alt="Refactoring Codebases">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md col-wrapper">
+                                <div class="title">
+                                    <a href="https://code-refactor.github.io/">Refactoring Codebases through Library Design</a>
+                                    <span class="year">(2025)</span>
+                                </div>
+                                <div class="authors">
+                                    <a href="https://zzigak.github.io/"><strong>Žiga Kovačič</strong></a><sup>*</sup>,
+                                    <a href="https://celine-lee.github.io/">Celine Lee</a><sup>*</sup>,
+                                    <a href="https://justinchiu.netlify.app/">Justin T Chiu</a><sup>*</sup>,
+                                    <a href="https://wenting-zhao.github.io/">Wenting Zhao</a>,
+                                    <a href="https://www.cs.cornell.edu/~ellisk/">Kevin Ellis</a>
+                                </div>
+                                <div class="link">
+                                    <span class="venue"><a href="">In submission</a></span>
+                                    <a href="https://code-refactor.github.io/"><i class="fas fa-globe"></i> Project Page</a>
+                                    <a href="https://github.com/zzigak/Librarian"><i class="fab fa-github"></i> Code</a>
+                                    <a href="https://github.com/zzigak?tab=repositories"><i class="fas fa-code"></i> Scoring Library (Coming Soon)</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pocket Time-Lapse -->
+                    <div class="section-item">
+                        <div class="row align-items-center">
+                            <div class="col-xs-12 col-md-auto col-wrapper">
+                               <div class="figure">
+                                    <video autoplay muted loop>
+                                        <source src="video/ptl.mp4" type="video/mp4">Your browser does not support the
+                                        video tag.
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md col-wrapper">
+                                <div class="title">
+                                    <a href="">Pocket Time-Lapse</a>
+                                    <span class="year">(2025)</span>
+                                </div>
+                                <div class="authors">
+                                    <a href="https://echen01.github.io/">Eric M. Chen</a>,
+                                    <a href="https://zzigak.github.io/"><strong>Žiga Kovačič</strong></a>,
+                                    <a href="">Madhav Agrawal</a>,
+                                    <a href="">Abe Davis</a>
+                                </div>
+                                <div class="link">
+                                    <span class="venue"><a href="">SIGGRAPH 2025</a></span>
+
+                                    <a href="https://pocket-timelapse.github.io/"><i class="fas fa-globe"></i> Project Page</a>
+                                    <a href=""><i class="fas fa-file-pdf"></i> Paper</a>
+                                    <a href=""><i class="fab fa-github"></i> Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <hr>
+
+                <!-- Projects -->
+                <div class="sec-wrapper pub-wrapper" id="projects">
+                    <div class="row pt-2">
+                        <div class="col-md-12">
+                            <h3>Projects</h3>
+                            <p>Here are some of my research and engineering projects, or at least the ones that are not being
+                                prepped for publications...</p>
+                        </div>
+                    </div>
+
+                    <!-- MLS-MPM and CPIC -->
+                    <div class="section-item">
+                        <div class="row align-items-center">
+                            <div class="col-xs-12 col-md-auto col-wrapper">
+                                <div class="figure">
+                                    <video autoplay muted loop>
+                                        <source src="video/mls-mpm.mp4" type="video/mp4">Your browser does not support the
+                                        video tag.
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md col-wrapper">
+                                <div class="title">
+                                    <a href="https://github.com/zzigak/MPM-MLS-CPIC" class="publication_link">MLS-MPM and CPIC</a>
+                                    <span class="year">(2025)</span>
+                                </div>
+                                <div class="description">
+                                    Implemented the Moving Least Squared Material Point Method, CPIC, various materials, as well as mesh extraction, both in 2D and 3D.
+                                </div>
+                                <div class="link">
+                                    <a href="https://github.com/zzigak/MPM-MLS-CPIC" class="publication_link"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Image Space Modal Basis -->
+                    <div class="section-item">
+                        <div class="row align-items-center">
+                            <div class="col-xs-12 col-md-auto col-wrapper">
+                                <div class="figure">
+                                    <video autoplay muted loop>
+                                        <source src="video/ismb_demo.mov" type="video/mp4">Your browser does not support the
+                                        video tag.
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md col-wrapper">
+                                <div class="title">
+                                    <a>Image Space Modal Basis in JS and Python</a>
+                                    <span class="year">(2024)</span>
+                                </div>
+                                <div class="description">
+                                    Implements the 2015 paper "Image-Space Modal Bases for Plausible Manipulation of Objects in
+                                    Video"
+                                    by Davis et al., extending the original work with modal warping. Developed modal analysis
+                                    pipeline
+                                    in Python and custom JavaScript rasterizer for real-time rendering.
+                                </div>
+                                <div class="link">
+                                    <a href="https://github.com/zzigak/npz2ply" class="publication_link"><i class="fab fa-github"></i> GitHub (Coming
+                                        Soon)</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Obstruction Removal -->
+                    <div class="section-item">
+                        <div class="row align-items-center">
+                            <div class="col-xs-12 col-md-auto col-wrapper">
+                                <div class="figure">
+                                    <video autoplay muted loop>
+                                        <source src="video/obstruction_removal.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md col-wrapper">
+                                <div class="title">
+                                    <a>Obstruction Removal - SliceSplatting</a>
+                                    <span class="year">(2024)</span>
+                                </div>
+                                <div class="description">
+                                    Modifies Gaussian Splatting to remove obstructions blocking the view of objects of interest
+                                    in 3D scene reconstruction.
+                                </div>
+                                <div class="link">
+                                    <a href="https://github.com/zzigak/npz2ply" class="publication_link"><i class="fab fa-github"></i> GitHub (Coming
+                                        Soon)</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pen-2-Graph -->
+                    <div class="section-item">
+                        <div class="row align-items-center">
+                            <div class="col-xs-12 col-md-auto col-wrapper">
+                                <div class="figure">
+                                    <img src="image/pen2graph.png" alt="Pen-2-Graph">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md col-wrapper">
+                                <div class="title">
+                                    <a href="https://github.com/zzigak/Pen2Graph" class="publication_link">Pen-2-Graph</a>
+                                    <span class="year">(2024)</span>
+                                </div>
+                                <div class="description">
+                                    Automates generation of node-edge graph programs from hand-drawn sketches using
+                                    vision-language
+                                    models and differential evolution. CS 6172 Final project.
+                                </div>
+                                <div class="link">
+                                    <a href="https://github.com/zzigak/Pen2Graph" class="publication_link"><i class="fab fa-github"></i> GitHub Page</a>
+                                    <a href="https://classes.cornell.edu/browse/roster/FA24/class/CS/6172"
+                                        class="publication_link"><i class="fas fa-graduation-cap"></i> Class Page</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-item">
+                        <div class="row align-items-center">
+                            <div class="col-xs-12 col-md-auto col-wrapper">
+                                <div class="figure">
+                                    <video autoplay muted loop>
+                                        <source src="video/path_tracing.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md col-wrapper">
+                                <div class="title">
+                                    <a href="https://github.com/zzigak/path-tracer-ocaml" class="publication_link">Path Tracing in OCaml</a>
+                                    <span class="year">(2025)</span>
+                                </div>
+                                <div class="description">
+                                    Implementation of a path tracer in OCaml. Includes distributive ray tracing, reflections, refractions, volumetric elements, emissive objects, BVH, and various object and material primitives.
+                                </div>
+                                <div class="link">
+                                    <a href="https://github.com/zzigak/path-tracer-ocaml" class="publication_link"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MelodyMesh -->
+                    <div class="section-item">
+                        <div class="row align-items-center">
+                            <div class="col-xs-12 col-md-auto col-wrapper">
+                                <div class="figure">
+                                    <img src="image/melodyMesh.png" alt="MelodyMesh">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md col-wrapper">
+                                <div class="title">
+                                    <a>MelodyMesh</a>
+                                    <span class="year">(2023)</span>
+                                </div>
+                                <div class="description">
+                                    3D music visualizer that deforms meshes based on audio frequencies. CS 6682 Final project.
+                                </div>
+                                <div class="link">
+                                    <a href="https://github.com/zzigak/MelodyMesh" class="publication_link"><i class="fab fa-github"></i> GitHub</a>
+                                    <a href="https://www.youtube.com/watch?v=-yw7hq0Sm4o" class="publication_link"><i class="fab fa-youtube"></i> Video</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Experience -->
+                <div class="sec-wrapper exp-wrapper" id="experience">
+                    <div class="row section-head">
+                        <div class="col col-wrapper">
+                            <h3 class="section-title">Experience</h3>
+                        </div>
+                    </div>
+
+                    <!-- OpenAI -->
+                    <div class="section-item">
+                        <div class="row align-items-center">
+                            <div class="col col-wrapper title">
+                                <a href="https://www.cs.cornell.edu/~ellisk/">Recursion and Learning Lab</a>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-md-9 col-wrapper info">
+                                Undergraduate Researcher
+                            </div>
+                            <div class="col-md-3 col-wrapper time text-md-right">
+                                Mar. 2025 – Present
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col col-wrapper location">
+                                Cornell University
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <!-- MIT CSAIL -->
+                    <div class="section-item">
+                        <div class="row align-items-center">
+                            <div class="col col-wrapper title">
+                                <a href="https://www.cs.cornell.edu/abe/group/members">Graphics & Vision Lab</a>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-md-9 col-wrapper info">
+                                Undergraduate Researcher </a>
+                            </div>
+                            <div class="col-md-3 col-wrapper time text-md-right">
+                                May 2023 - Mar 2023
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col col-wrapper location">
+                                Cornell University </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Teaching Experience -->
+                <div class="sec-wrapper exp-wrapper" id="teaching">
+                    <div class="row section-head">
+                        <div class="col col-wrapper">
+                            <h3 class="section-title">Teaching Experience</h3>
+                        </div>
+                    </div>
+
+                    <!-- CS 4787 -->
+                    <div class="section-item" style="margin-top: 5px; padding-top: 2px; padding-bottom: 2px;">
+                        <div class="row align-items-center">
+                            <div class="col-md-7 col-wrapper">
+                                <strong>CS 4787:</strong> Large Scale Machine Learning | <span style="color: var(--nord12); font-weight: 600;">Head TA</span>
+                            </div>
+                            <div class="col-md-5 col-wrapper time text-md-right">
+                                Cornell University, Fall 2025
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CS 4782 -->
+                    <div class="section-item" style="margin-top: 5px; padding-top: 2px; padding-bottom: 2px;">
+                        <div class="row align-items-center">
+                            <div class="col-md-7 col-wrapper">
+                                <strong>CS 4782:</strong> Introduction to Deep Learning | <span style="color: var(--nord12); font-weight: 600;">Head TA</span>, Made autograder for 200+ students
+                            </div>
+                            <div class="col-md-5 col-wrapper time text-md-right">
+                                Cornell University, Spring 2025
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CS 4620 -->
+                    <div class="section-item" style="margin-top: 5px; padding-top: 2px; padding-bottom: 2px;">
+                        <div class="row align-items-center">
+                            <div class="col-md-7 col-wrapper">
+                                <strong>CS 4620:</strong> Introduction to Computer Graphics | TA
+                            </div>
+                            <div class="col-md-5 col-wrapper time text-md-right">
+                                Cornell University, Fall 2024
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CS 4780 -->
+                    <div class="section-item" style="margin-top: 5px; padding-top: 2px; padding-bottom: 2px;">
+                        <div class="row align-items-center">
+                            <div class="col-md-7 col-wrapper">
+                                <strong>CS 4780:</strong> Introduction to Machine Learning | TA, <span style="color: var(--nord12); font-weight: 600;">TA Award</span>
+                            </div>
+                            <div class="col-md-5 col-wrapper time text-md-right">
+                                Cornell University, Spring 2024
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CS 2110 -->
+                    <div class="section-item" style="margin-top: 5px; padding-top: 2px; padding-bottom: 2px;">
+                        <div class="row align-items-center">
+                            <div class="col-md-7 col-wrapper">
+                                <strong>CS 2110:</strong> Object Oriented Programming and Data Structures | TA
+                            </div>
+                            <div class="col-md-5 col-wrapper time text-md-right">
+                                Cornell University, Spring 2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Personal -->
+                <div class="row pt-2" id="personal">
+                    <div class="col-md-12">
+                        <h3>Personal</h3>
+                        <div>
+                            <p>
+                                In my free time I enjoy cooking, climbing, and playing the guitar.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Friends' Personal Websites -->
+                <div class="row pt-2" id="friends">
+                    <div class="col-md-12">
+                        <div>
+                            <p>Personal websites of some friends/acquaintances you might find interesting:</p>
+                            <p>
+                                <a href="https://echen01.github.io/" target="_blank" class="black">echen01.github.io</a> |
+                                <a href="https://jasonklein.dev" target="_blank" class="black">jasonklein.dev</a> |
+                                <a href="https://www.trannhan.com/" target="_blank" class="black">trannhan.com</a> |
+                                <a href="https://jren03.github.io/" target="_blank" class="black">jren03.github.io</a> |
+                                <a href="https://shamus.li/" target="_blank" class="black">shamus.li</a> |
+                                <a href="https://atikshb.github.io/" target="_blank" class="black">atikshb.github.io</a> |
+                                <a href="https://jeremykubenjet.com" target="_blank" class="black">jeremykubenjet.com</a> |
+                                <a href="https://www.jonochen.net/" target="_blank" class="black">www.jonochen.net</a> |
+                                <a href="https://kabirsamsi.com/" target="_blank" class="black">kabirsamsi.com</a> |
+                                <a href="https://davidxlin.github.io/" target="_blank" class="black">davidxlin.github.io</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <script>
+        // Theme switching functionality
+        function toggleTheme() {
+            const body = document.body;
+            const themeSwitchIcon = document.querySelector('.theme-switch i');
+            
+            body.classList.toggle('dark-mode');
+            
+            if (body.classList.contains('dark-mode')) {
+                // Switched to dark mode
+                themeSwitchIcon.classList.remove('fa-moon');
+                themeSwitchIcon.classList.add('fa-sun');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                // Switched to light mode
+                themeSwitchIcon.classList.remove('fa-sun');
+                themeSwitchIcon.classList.add('fa-moon');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        // Check for saved theme preference
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme');
+            const themeSwitchIcon = document.querySelector('.theme-switch i');
+            
+            // Only apply dark mode if it was explicitly set by the user
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark-mode');
+                themeSwitchIcon.classList.remove('fa-moon');
+                themeSwitchIcon.classList.add('fa-sun');
+            } else {
+                // Default to light mode
+                document.body.classList.remove('dark-mode');
+                themeSwitchIcon.classList.remove('fa-sun');
+                themeSwitchIcon.classList.add('fa-moon');
+            }
+        });
+    </script>
 </body>
 
 </html>
