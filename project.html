@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="image/linkme.png" type="image/png">
+    <meta name="description" content="Anonymous Research Paper">
+    <meta name="keywords" content="research, computer science, anonymous, placeholder">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./styles.css" rel="stylesheet" type="text/css">
+    <link href="./box.css" rel="stylesheet" type="text/css" id="theme-style" disabled>
+    <title>Gone Astray</title>
+
+    <script>
+        function copyText() {
+            var text = document.getElementById("citation-content")
+            navigator.clipboard.writeText(text.innerText)
+        }
+
+        // Theme switching functionality
+        function toggleTheme() {
+            const themeStyle = document.getElementById('theme-style');
+            const isLight = themeStyle.disabled;
+            themeStyle.disabled = !isLight;
+
+            // Update icon
+            const icon = document.querySelector('.theme-switch i');
+            icon.className = isLight ? 'fas fa-moon' : 'fas fa-sun';
+
+            // Save preference
+            localStorage.setItem('theme', isLight ? 'dark' : 'light');
+        }
+
+        // Set initial theme based on saved preference
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                toggleTheme();
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <button class="theme-switch" onclick="toggleTheme()">
+        <i class="fas fa-sun"></i>
+    </button>
+
+
+    <header>
+        <h1>Gone Astray</h1>
+        <h3> A Game by Skye Studios </h3>
+        <img src="image/skye_ss.png" alt="Skye Studios" class="skye"
+            onerror="this.onerror=null; this.src='image/placeholder.png'; console.log('Image failed to load');">
+
+        <figcaption> Stranded in the wreckage of your spaceship, you must harness the gravitional pull
+            of your distant homeworld to navigate the remnants of your ship, repair your escape pod, and take
+            flight! </figcaption>
+
+        <h2> Cornell's 2025 Most Polished Game </h2>
+
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-button"><i class="fa-solid fa-file-pdf"></i> Manual</a></li>
+                <li><a href="https://github.coecis.cornell.edu/kc824/Gone-Astray" class="nav-button"><i
+                            class="fa-brands fa-github"></i> Code</a></li>
+                <li><a href="#citation" class="nav-button"><i class="fa-solid fa-quote-right"></i> Trailer</a></li>
+            </ul>
+        </nav>
+
+        <figure id="teaser">
+            <img src="image/gone_astray_cover_thumbnail.png" alt="Gone Astray" class="project-image"
+                onerror="this.onerror=null; this.src='image/placeholder.png'; console.log('Image failed to load');">
+            <figcaption> Gone Astray is a strategy platformer with unique 360-degree gravity manipulation. Players will
+                guide Laika through a series of obstacles by harnessing the force of gravity. It is a single-player
+                gameintended for audiences ages 13 and up. The setting and narration of the game draw from the story of
+                the dog Laika, who was the first dog to orbit Earth. </figcaption>
+        </figure>
+    </header>
+
+    <main>
+        <section>
+            <h2 id="abstract">Brief Overview</h2>
+            <p>In Gone Astray, players' screens remain fixed to the orientation of the ship rather than the direction of
+                gravity, creating a more immersive experience with the game’s core movement mechanic. Gravity itself
+                rotates, affecting certain obstacles in the environment and enabling unique interactions with minimal
+                complexity. Characters can jump perpendicular to the platform they're on and stick to it regardless of
+                gravity, allowing for fluid, flexible movement and distinctive level design that’s both simple to build
+                and engaging to play.</p>
+        </section>
+
+        <section>
+            <h2 id="video">Video</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5KMdRyTnbZQ?si=zGTKb5ogeqiO8xa4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section>
+            <h2 id="citation">My Contributions</h2>
+            <p>In the development of Gone Astray, I played multiple roles within our team. My primary role was as
+                Project Lead, where I was in charge of keeping track of and clearly communicating tasks to team members,
+                assigning tasks as necessary, facilitating communication between team members, handling team conflicts,
+                and
+                keeping the team on schedule. I also was a programmer and focused on implementing the core visual
+                aspects of
+                the game, which included the 360 degree earth gravity manipulator mechanic, the visual window setup
+                and the interactive background, and the dynamic minimap. Additionally, I also contributed to the music
+                composition of the game and worked on all of the sound tracks and integrated sound effects that
+                enhanced the player's experience and complemented the game's
+                atmosphere. My involvement in these areas was crucial to shaping the overall feel and functionality of
+                Gone Astray.</p>
+
+            <figure id="teaser">
+                <img src="image/Postmortem.png" alt="Gone Astray" class="project-imageone"
+                    onerror="this.onerror=null; this.src='image/placeholder.png'; console.log('Image failed to load');">
+                <figcaption> Created the Gameplay Prototype (Right Most Image) in Unity Engine </figcaption>
+            </figure>
+
+            <figure id="teaser">
+                <img src="image/Screenshot 2025-05-09 at 8.03.30 PM.png" alt="Gone Astray" class="project-imageone"
+                    onerror="this.onerror=null; this.src='image/placeholder.png'; console.log('Image failed to load');">
+                <figcaption> Gameplay </figcaption>
+            </figure>
+
+            <figure id="teaser">
+                <img src="image/Screenshot 2025-05-09 at 8.05.09 PM.png" alt="Gone Astray" class="project-imageone"
+                    onerror="this.onerror=null; this.src='image/placeholder.png'; console.log('Image failed to load');">
+                <figcaption> Gameplay </figcaption>
+            </figure>
+
+            <p> I learned a lot by working on Gone Astray. This project taught me valuable skills in teamwork, project
+                management, and game design. Such as learning how to manage a project from beginning to end, creating
+                and executing architecture for a game, effectively communicating with team members and learning how to
+                incorporate feedback into the development process. Especially also learning how to prioritize tasks
+                effectively. I also gained important programming skills, and learned how to create engaging gameplay
+                mechanics that enhance the player's experience. I look forward to applying these skills in future
+                projects.</strong> </p>
+        </section>
+        <section>
+            <h2 id="future">Future Work</h2>
+            <p>In the future, I plan to further work with my team Skye Studios to ship additional content updates for
+                Gone Astray and launch on Steam by Fall 2025!!</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 Gabby Loncke</p>
+        <p>Last updated: July 2025</p>
+
+
+    </footer>
+</body>
+
+</html>

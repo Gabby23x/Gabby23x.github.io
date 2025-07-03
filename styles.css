@@ -291,6 +291,39 @@ a.publication_link:hover {
     margin-bottom: 1.5rem;
 }
 
+.project-image {
+    max-width: 200px;
+    /* Adjust this value to your preferred width */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    /* Centers the image */
+}
+
+.project-imageone {
+    max-width: 400px;
+    /* Adjust this value to your preferred width */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    /* Centers the image */
+}
+
+.skye {
+    max-width: 80px;
+    /* Adjust this value to your preferred width */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    /* Centers the image */
+}
+
+
+
+
 .main-name {
     font-family: 'Noto Serif', Georgia, serif;
     font-weight: 550;
