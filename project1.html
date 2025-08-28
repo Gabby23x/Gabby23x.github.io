@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="image/linkme.png" type="image/png">
+    <meta name="description" content="Anonymous Research Paper">
+    <meta name="keywords" content="research, computer science, anonymous, placeholder">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./styles.css" rel="stylesheet" type="text/css">
+    <link href="./box.css" rel="stylesheet" type="text/css" id="theme-style" disabled>
+    <title>Gone Astray</title>
+
+    <script>
+        function copyText() {
+            var text = document.getElementById("citation-content")
+            navigator.clipboard.writeText(text.innerText)
+        }
+
+        // Theme switching functionality
+        function toggleTheme() {
+            const themeStyle = document.getElementById('theme-style');
+            const isLight = themeStyle.disabled;
+            themeStyle.disabled = !isLight;
+
+            // Update icon
+            const icon = document.querySelector('.theme-switch i');
+            icon.className = isLight ? 'fas fa-moon' : 'fas fa-sun';
+
+            // Save preference
+            localStorage.setItem('theme', isLight ? 'dark' : 'light');
+        }
+
+        // Set initial theme based on saved preference
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                toggleTheme();
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <button class="theme-switch" onclick="toggleTheme()">
+        <i class="fas fa-sun"></i>
+    </button>
+
+
+    <header>
+        <img src="image/GrubBug Logo.png" alt="Grub Bug" class="grub-bug-logo">
+        <h3> A Game by DGA Studios </h3>
+        <img src="image/DGA_Studios_Logo_1.png" alt="Skye Studios" class="skye"
+            onerror="this.onerror=null; this.src='image/placeholder.png'; console.log('Image failed to load');">
+
+        <figcaption> Step into the shoes of Cook Roach, a tenacious bug desperate to support his family. With no time
+            for bureaucracy, Cook Roach has taken his street food cart to the bustling roads, serving up dishes and
+            dodging law enforcement </figcaption>
+
+
+
+
+
+        <figure id="teaser">
+            <img src="image/Syracuse.PNG" alt="Gone Astray" class="project-image"
+                onerror="this.onerror=null; this.src='image/placeholder.png'; console.log('Image failed to load');">
+            <figcaption> Players step into the shoes of Cook Roach, a desperate and determined bug who has taken to the
+                streets to support his family. With no time to wait for the city to approve his food vending license,
+                Cook Roach must evade the relentless law enforcement who want to shut him down.
+            </figcaption>
+        </figure>
+    </header>
+
+    <main>
+        <section>
+            <h2 id="abstract">Brief Overview</h2>
+            <p>Grub Bug is a fast-paced 3D Isometric action game that incorporates elements of resource management,
+                chaotic cooking and high-speed driving into a packaged experience. We were inspired a lot by games like
+                Diner Dash, Overcooked, and Grand Theft Auto. Thematically, the game draws from the real-world struggles
+                of street food vendors who navigate less than ideal environments to make ends meet, with elements of
+                cartoon humor.
+            </p>
+        </section>
+
+        <section>
+            <h2 id="workflow">Project Management & Development Process</h2>
+
+            <h3>Team Structure & Management</h3>
+            <p>As Project Lead, I organized the team into three specialized units:</p>
+
+            <div class="team-structure">
+                <div class="team-unit">
+                    <h4><i class="fas fa-code"></i> Programming Team</h4>
+                    <ul>
+                        <li>Game script development in Unity/C#</li>
+                        <li>Architecture specification creation</li>
+                        <li>Debugging and optimization</li>
+                        <li>Asset integration</li>
+                        <li>Development tools creation</li>
+                    </ul>
+                </div>
+
+                <div class="team-unit">
+                    <h4><i class="fas fa-palette"></i> Art Team</h4>
+                    <ul>
+                        <li>Concept art development</li>
+                        <li>Character design</li>
+                        <li>Asset creation and animation</li>
+                        <li>Art specification management</li>
+                        <li>Promotional material creation</li>
+                    </ul>
+                </div>
+
+                <div class="team-unit">
+                    <h4><i class="fas fa-music"></i> Sound Team</h4>
+                    <ul>
+                        <li>Audio design mood boarding</li>
+                        <li>Music composition</li>
+                        <li>Sound effect creation</li>
+                        <li>Audiovisual specification</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Development Timeline & Milestones</h3>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5>Initial Concept</h5>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5>Non-Digital Prototype</h5>
+
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5>Gameplay Prototype</h5>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5>Technical Prototype</h5>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5>Alpha Release</h5>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5>Beta Release</h5>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5>Golden Master</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h4>Initial Concept Phase</h4>
+                <p>Led team through concept pitches and core game definition:</p>
+                <blockquote>
+                    A fast-paced game where players manage an unlicensed food cart, cooking and delivering orders while
+                    evading law enforcement.
+                </blockquote>
+            </div>
+
+            <div class="milestone">
+                <h4>Non-Digital Prototype Phase</h4>
+                <div class="prototype-gallery">
+                    <figure>
+                        <img src="image/image.png" alt="Easy Level Prototype" class="prototype-image">
+                        <figcaption>Easy Level Design Testing</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="image/image1.png" alt="Medium Level Prototype" class="prototype-image">
+                        <figcaption>Medium Level Design Testing</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="image/image3.png" alt="Hard Level Prototype" class="prototype-image">
+                        <figcaption>Hard Level Design Testing</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h4>Digital Prototype Phase</h4>
+                <div class="prototype-details">
+                    <div class="arch-spec">
+                        <h5>Architecture Specification</h5>
+                        <img src="image/image4.png" alt="Architecture Diagram" class="prototype-image">
+                    </div>
+
+                    <div class="gameplay-preview">
+                        <h5>Initial Gameplay Implementation</h5>
+                        <video width="100%" controls>
+                            <source src="video/PathfindingTileMapDemo_3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tools-section">
+                <h3>Project Management Tools</h3>
+                <ul class="tools-list">
+                    <li><i class="fab fa-figma"></i> Figma - Architecture & Design Specs</li>
+                    <li><i class="fab fa-jira"></i> Jira - Agile Task Management</li>
+                    <li><i class="fab fa-github"></i> Git - Source Control</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 id="concept-art">Concept Art & Visual Development</h2>
+            <p>Our art team developed a distinctive visual style that blends urban environments with insect-inspired
+                elements, creating a unique world for Cook Roach's adventures.</p>
+
+            <div class="concept-art-gallery">
+                <figure class="concept-item">
+                    <img src="image/char.png" alt="Character Concept" class="concept-image">
+                    <figcaption>Early character explorations for GrubBug</figcaption>
+                </figure>
+
+                <figure class="concept-item">
+                    <img src="image/env.png" alt="Environment Concept" class="concept-image">
+                    <figcaption>City environment concepts</figcaption>
+                </figure>
+
+                <figure class="concept-item">
+                    <img src="image/cart.png" alt="Food Cart Concept" class="concept-image">
+                    <figcaption>Food cart design iterations</figcaption>
+                </figure>
+            </div>
+
+            <div class="art-process">
+                <h4>Visual Development Pipeline</h4>
+                <ul class="process-steps">
+                    <li><i class="fas fa-pencil-alt"></i> Initial sketches and mood boards</li>
+                    <li><i class="fas fa-paint-brush"></i> Style exploration and color studies</li>
+                    <li><i class="fas fa-vector-square"></i> Final asset creation</li>
+                    <li><i class="fas fa-cube"></i> 3D model implementation</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 id="citation">My Contributions</h2>
+            <p>In the development of GrubBug, my primary role was as
+                Project Lead, where I was in charge of keeping track of and clearly communicating tasks to team members,
+                assigning tasks as necessary, facilitating cross communication between team members, handling team
+                conflicts,
+                and keeping the team on schedule. I also worked as programmer and focused on setting up the core visual
+                system
+                of the game, to ensure players can fully immerse themselves in the world of GrubBug.</p>
+
+            <figure id="teaser">
+                <img src="image/bug.png" alt="Gone Astray" class="project-imageone"
+                    onerror="this.onerror=null; this.src='image/placeholder.png'; console.log('Image failed to load');">
+
+            </figure>
+
+
+
+
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>© 2025 Gabby Loncke</p>
+        <p>Last updated: August 2025</p>
+
+
+    </footer>
+</body>
+
+</html>

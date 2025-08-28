@@ -293,32 +293,42 @@ a.publication_link:hover {
 
 .project-image {
     max-width: 200px;
-    /* Adjust this value to your preferred width */
     width: 100%;
     height: auto;
     display: block;
     margin: 0;
-    /* Centers the image */
+}
+
+.grub-bug-logo {
+    max-width: 200px;
+    width: 100%;
+}
+
+.goneastray-logo {
+    max-width: 600px;
+    width: 100%;
+    margin: 0;
+    margin-left: -70px;
+
+
 }
 
 .project-imageone {
     max-width: 400px;
-    /* Adjust this value to your preferred width */
     width: 100%;
     height: auto;
     display: block;
     margin: 0;
-    /* Centers the image */
+
 }
 
 .skye {
     max-width: 80px;
-    /* Adjust this value to your preferred width */
     width: 100%;
     height: auto;
     display: block;
     margin: 0;
-    /* Centers the image */
+
 }
 
 
@@ -339,6 +349,107 @@ a.publication_link:hover {
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
     text-align: center;
+}
+
+.team-structure {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.team-unit {
+    background: var(--nord6);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.milestone {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: var(--nord5);
+    border-radius: 8px;
+}
+
+.prototype-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.prototype-image {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tools-list {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+}
+
+.tools-list i {
+    margin-right: 0.5rem;
+    color: var(--nord10);
+}
+
+
+.concept-art-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.concept-item {
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+.concept-item:hover {
+    transform: scale(1.02);
+}
+
+.concept-image {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.concept-item figcaption {
+    margin-top: 1rem;
+    text-align: center;
+    font-style: italic;
+    color: var(--nord3);
+}
+
+.art-process {
+    background: var(--nord6);
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.process-steps {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.process-steps li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.process-steps i {
+    color: var(--nord10);
 }
 
 /* Theme Switch Button */
@@ -370,6 +481,91 @@ a.publication_link:hover {
 
 .theme-switch:hover i {
     color: var(--nord10);
+}
+
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--nord9);
+    z-index: 1;
+}
+
+.timeline-item {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    flex: 1;
+}
+
+.timeline-dot {
+    width: 12px;
+    height: 12px;
+    background: var(--nord10);
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+.timeline-content {
+    background: var(--nord6);
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h5 {
+    margin: 0;
+    font-size: 0.9em;
+    color: var(--nord10);
+}
+
+.timeline-content span {
+    font-size: 0.8em;
+    color: var(--nord3);
+}
+
+@media (max-width: 768px) {
+    .timeline {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .timeline::before {
+        top: 0;
+        bottom: 0;
+        left: 20px;
+        width: 2px;
+        height: auto;
+    }
+
+    .timeline-item {
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .timeline-dot {
+        margin: 0 20px;
+    }
+
+    .timeline-content {
+        text-align: left;
+    }
 }
 
 /* Desktop Sidebar & Layout */
