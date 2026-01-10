@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="image/linkme.png" type="image/png">
+    <meta name="description" content="Anonymous Research Paper">
+    <meta name="keywords" content="research, computer science, anonymous, placeholder">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./styles.css" rel="stylesheet" type="text/css">
+    <link href="./box.css" rel="stylesheet" type="text/css" id="theme-style" disabled>
+    <title>Gone Astray</title>
+
+    <script>
+        function copyText() {
+            var text = document.getElementById("citation-content")
+            navigator.clipboard.writeText(text.innerText)
+        }
+
+        // Theme switching functionality
+        function toggleTheme() {
+            const themeStyle = document.getElementById('theme-style');
+            const isLight = themeStyle.disabled;
+            themeStyle.disabled = !isLight;
+
+            // Update icon
+            const icon = document.querySelector('.theme-switch i');
+            icon.className = isLight ? 'fas fa-moon' : 'fas fa-sun';
+
+            // Save preference
+            localStorage.setItem('theme', isLight ? 'dark' : 'light');
+        }
+
+        // Set initial theme based on saved preference
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                toggleTheme();
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <button class="theme-switch" onclick="toggleTheme()">
+        <i class="fas fa-sun"></i>
+    </button>
+
+
+    <header>
+        <img src="image/GOAT_SHIHAN.png" alt="Grub Bug" class="grub-bug-logo">
+        <h3> A Game by DGA Studios </h3>
+        <img src="image/DGA_Studios_Logo_1.png" alt="Skye Studios" class="skye"
+            onerror="this.onerror=null; this.src='image/placeholder.png'; console.log('Image failed to load');">
+
+
+
+
+
+
+
+
+    </header>
+
+    <main>
+        <section>
+            <h2 id="abstract">Brief Overview</h2>
+            <p>Our game is a Bullet Hell / Action-Adventure set in the Wild West. In this world, saloons are the
+                lifeblood of every community—until that freedom comes under threat. The antagonist, “The Granny,” is a
+                ruthless 72-year-old business tycoon expanding her bar empire through sabotage and exploitation. Duke, a
+                26-year-old bartender, has watched neighboring saloons fall one by one, and now Granny has set her
+                sights on his family’s bar. To protect his community, Duke must take on her network of enforcers and
+                expose the truth behind her corrupt capitalist machine.
+            </p>
+        </section>
+
+        <section>
+            <h2 id="workflow">Project Management & Development Process</h2>
+
+            <h3>Team Structure & Management</h3>
+            <p>As Project Lead, I organized the team of programmers, artists, audio designers, and writers into three
+                specialized units:</p>
+
+            <div class="team-structure">
+                <div class="team-unit">
+                    <h4><i class="fas fa-person"></i> Player Team</h4>
+                    <ul>
+                        <li>Combat System</li>
+                        <li>Player Movement</li>
+                        <li>Player Design</li>
+                        <li>Player Loadout</li>
+
+                    </ul>
+                </div>
+
+                <div class="team-unit">
+                    <h4><i class="fas fa-cube"></i> Arena Team</h4>
+                    <ul>
+                        <li>Boss Design</li>
+                        <li>Boss Battle Mechanics</li>
+                        <li>Level Design</li>
+                        <li>Boss AI</li>
+
+                    </ul>
+                </div>
+
+                <div class="team-unit">
+                    <h4><i class="fas fa-pencil-alt"></i> Narrative Team</h4>
+                    <ul>
+                        <li>Story Development</li>
+                        <li>Boss/Player Narrative</li>
+                        <li>World Hub </li>
+                        <li>In Game Dialogue</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Development Timeline & Milestones</h3>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5>Initial Concept</h5>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5>Gameplay Prototype</h5>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5>Technical Prototype</h5>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5>Alpha Release</h5>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5>Golden Master</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h4>Initial Concept Phase</h4>
+                <p>Led team through concept pitches and core game definition:</p>
+                <blockquote>
+                    A western bullet hell game where players defend their saloon from a corrupt business tycoon by
+                    challenging her network of enforcers in intense boss battles.
+                </blockquote>
+            </div>
+
+
+
+            <div class="milestone">
+                <h4>Digital Prototype Phase</h4>
+                <div class="prototype-details">
+                    <div class="arch-spec">
+                        <h5>Architecture Specification</h5>
+                        <img src="image/UML.png" alt="Architecture Diagram" class="prototype-image">
+                    </div>
+
+                    <div class="gameplay-preview">
+                        <h5>Some Boss Designs..</h5>
+                        <p><strong>Magician Boss</strong></p>
+                        <img src="image/magboss.png" alt="Gameplay Preview" class="prototype-image">
+                        <p><strong>Bull Boss</strong></p>
+                        <img src="image/bullboss.png" alt="Gameplay Preview" class="prototype-image">
+                        <img src="image/2025-10-01_5.09.30.png" alt="Gameplay Preview" class="prototype-image">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="tools-section">
+                <h3>Project Management Tools</h3>
+                <ul class="tools-list">
+                    <li><i class="fab fa-figma"></i> Figma - Architecture & Design Specs</li>
+                    <li><i class="fab fa-jira"></i> Jira/Trello - Agile Task Management</li>
+                    <li><i class="fab fa-github"></i> Git - Source Control</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 id="concept-art">Concept Art & Visual Development</h2>
+            <p>Our art team developed a distinctive visual style that blends urban environments with insect-inspired
+                elements, creating a unique world for Cook Roach's adventures.</p>
+
+            <div class="concept-art-gallery">
+                <figure class="concept-item">
+                    <img src="image/char.png" alt="Character Concept" class="concept-image">
+                    <figcaption>Early character explorations for GrubBug</figcaption>
+                </figure>
+
+                <figure class="concept-item">
+                    <img src="image/env.png" alt="Environment Concept" class="concept-image">
+                    <figcaption>City environment concepts</figcaption>
+                </figure>
+
+                <figure class="concept-item">
+                    <img src="image/cart.png" alt="Food Cart Concept" class="concept-image">
+                    <figcaption>Food cart design iterations</figcaption>
+                </figure>
+            </div>
+
+            <div class="art-process">
+                <h4>Visual Development Pipeline</h4>
+                <ul class="process-steps">
+                    <li><i class="fas fa-pencil-alt"></i> Initial sketches and mood boards</li>
+                    <li><i class="fas fa-paint-brush"></i> Style exploration and color studies</li>
+                    <li><i class="fas fa-vector-square"></i> Final asset creation</li>
+                    <li><i class="fas fa-cube"></i> 3D model implementation</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 id="citation">My Contributions</h2>
+            <h3>Project Management Contributions</h3>
+            <ul>
+                <li>Structured the team into programming, art, and sound units</li>
+                <li>Led sprint planning and managed tasks in Jira</li>
+                <li>Facilitated stand-ups, milestone reviews, and conflict resolution</li>
+                <li>Delivered Golden Master on time; Showcased to 1000+ people at Syracuse Makerfaire</li>
+            </ul>
+
+            <h3>Design Contributions</h3>
+            <ul>
+                <li>Designed in-game camera system</li>
+                <li>Led prototyping and playtesting (digital & non-digital)</li>
+                <li>Iterated on gameplay based on player feedback and testing results</li>
+            </ul>
+
+            <h3>Technical Contributions</h3>
+            <ul>
+                <li>Programmed core visual system in Unity (C#)</li>
+                <li>Built internal tools for asset integration and debugging</li>
+
+            </ul>
+
+            <figure id="teaser">
+                <img src="image/bug.png" alt="Gone Astray" class="project-imageone"
+                    onerror="this.onerror=null; this.src='image/placeholder.png'; console.log('Image failed to load');">
+
+            </figure>
+
+            <section>
+                <h2>Reflection</h2>
+                <p>
+                    <strong>As a PM:</strong> I learned how to keep a diverse team aligned and motivated, and how to
+                    adapt Agile practices for a student game project.<br>
+                    <strong>As a designer/programmer:</strong> I deepened my skills in rapid prototyping, player
+                    feedback integration, and building scalable Unity systems.
+                </p>
+            </section>
+
+
+
+
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>© 2025 Gabby Loncke</p>
+        <p>Last updated: August 2025</p>
+
+
+    </footer>
+</body>
+
+</html>
